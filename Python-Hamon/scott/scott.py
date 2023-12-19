@@ -39,6 +39,7 @@ def main():
         for j in i["events"]:
             entrylist.append(j)
     correlation = {}
+    print(entrylist)
 
     for i in entrylist:
         result = get_correlation(data,i)
@@ -49,9 +50,11 @@ def main():
     print("min_correlated_event  =   "+min(correlation,key=correlation.get))
 
 
-
-
 main()
+
+
+
+
 
 
 
